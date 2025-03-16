@@ -3,13 +3,56 @@ layout: base.njk
 title: Home
 ---
 
-<div class="hero">
-    <h1>Welcome to Clinician to Creator</h1>
-    <p>Join me on my journey from healthcare to software development</p>
-</div>
+<section class="hero-section">
+    <h1 class="hero-title">
+        <span class="highlight">Free Weekly</span><br>
+        Healthcare Tech Newsletter
+    </h1>
+    <p class="hero-subtitle">
+        Join my newsletter for insights on healthcare technology, coding tutorials,
+        and my journey from healthcare to software development.
+    </p>
+</section>
 
-<section class="intro">
-    <h2>About This Blog</h2>
-    <p>This blog documents my transition from being a healthcare professional to becoming a software developer. Here, I share my experiences, challenges, and insights to help other clinicians who are interested in tech.</p>
-    <a href="/blog" class="cta-button">Read My Blog</a>
+<section class="newsletter-signup">
+    <div class="newsletter-form">
+        <input type="email" placeholder="Your Email Address">
+        <button type="button">Subscribe</button>
+    </div>
+    <p class="newsletter-tagline">Practical insights. No fluff. For healthcare professionals interested in tech 🚀</p>
+</section>
+
+<section class="about-section">
+    <div class="about-content">
+        <h2>Hi, I'm Ernest Lim</h2>
+        <p>
+            I'm a healthcare professional turned software developer, passionate about leveraging technology 
+            to solve problems in healthcare and beyond.
+        </p>
+        <p>
+            My journey began in the medical field, where I worked directly with patients and saw firsthand 
+            the challenges and inefficiencies in healthcare systems. This experience sparked my interest in 
+            how technology could improve patient care and healthcare delivery.
+        </p>
+        <p>
+            Through this blog, I share my experiences transitioning from healthcare to tech, insights on 
+            healthcare innovation, and practical coding tutorials.
+        </p>
+    </div>
+    <div class="article-list">
+        <h2>Latest Articles:</h2>
+        {%- for post in collections.posts | reverse -%}
+            {% if loop.index <= 3 %}
+                <div class="article-item">
+                    <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+                    <p class="article-meta">
+                        <span class="date">{{ post.date | date }}</span>
+                    </p>
+                </div>
+            {% endif %}
+        {%- endfor -%}
+        <div class="view-all">
+            <a href="/blog" class="read-more">View all articles →</a>
+        </div>
+    </div>
 </section> 

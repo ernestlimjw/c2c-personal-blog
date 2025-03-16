@@ -3,29 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if title %}{{ title }} - {% endif %}Clinician to Creator</title>
+    <title>{% if title %}{{ title }} - {% endif %}Ernest Lim</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <h1 class="site-title">Clinician to Creator</h1>
-            <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/blog">Blog</a></li>
-            </ul>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="/img/22493092.jpeg" alt="Ernest Lim" class="profile-image">
+                <div class="author-info">
+                    <span class="by-text">by</span>
+                    <h1 class="author-name">ERNEST LIM</h1>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a href="/blog">BLOG</a></li>
+                    <li><a href="/newsletter">NEWSLETTER</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </header>
 
     <main>
-        <div class="container">
-            {{ content | safe }}
-        </div>
+        {{ content | safe }}
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Clinician to Creator. All rights reserved.</p>
+            <p>&copy; 2024 Ernest Lim. All rights reserved.</p>
         </div>
     </footer>
 </body>

@@ -1,6 +1,9 @@
 module.exports = function(eleventyConfig) {
     // Copy the css directory to the output
     eleventyConfig.addPassthroughCopy("src/css");
+    
+    // Copy the img directory to the output
+    eleventyConfig.addPassthroughCopy("src/img");
 
     // Create a collection for blog posts
     eleventyConfig.addCollection("posts", function(collectionApi) {

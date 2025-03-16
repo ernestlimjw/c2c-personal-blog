@@ -2,10 +2,41 @@
 layout: base.njk
 ---
 
-<article class="blog-post">
-    <h1>{{ title }}</h1>
-    <div class="post-meta">
-        <span class="date">{{ page.date | date }}</span>
-    </div>
-    {{ content | safe }}
-</article> 
+<div class="container">
+    <article class="blog-post">
+        <h1>{{ title }}</h1>
+        <div class="article-meta">
+            <span class="date">{{ page.date | date }}</span>
+        </div>
+        
+        {{ content | safe }}
+        
+        <div class="post-footer">
+            <div class="post-tags">
+                {% if tags %}
+                    {% for tag in tags %}
+                        {% if tag != "posts" %}
+                            <a href="/tags/{{ tag }}" class="tag">{{ tag }}</a>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </div>
+            
+            <div class="post-share">
+                <span>Share:</span>
+                <a href="#" class="share-link">Twitter</a>
+                <a href="#" class="share-link">LinkedIn</a>
+                <a href="#" class="share-link">Facebook</a>
+            </div>
+        </div>
+    </article>
+    
+    <section class="newsletter-signup">
+        <h2>Enjoyed this article?</h2>
+        <p>Subscribe to my newsletter for more insights on healthcare technology and software development.</p>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Your Email Address">
+            <button type="button">Subscribe</button>
+        </div>
+    </section>
+</div> 

@@ -1,0 +1,11 @@
+---
+layout: base.njk
+---
+
+<article class="blog-post">
+    <h1>{{ title }}</h1>
+    <div class="post-meta">
+        <span class="date">{{ page.date | date }}</span>
+    </div>
+    {{ content | safe }}
+</article> 

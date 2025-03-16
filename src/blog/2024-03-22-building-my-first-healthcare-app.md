@@ -1,4 +1,8 @@
-# Building My First Healthcare App: From Idea to Implementation
+---
+layout: post.njk
+title: Building My First Healthcare App - From Idea to Implementation
+date: 2024-03-22
+---
 
 After three months of learning to code, I finally built my first healthcare application! Today, I want to share my experience creating a simple medication reminder app and what I learned along the way.
 

@@ -44,4 +44,8 @@ pids/
 *.tgz
 
 # Yarn Integrity file
-.yarn-integrity 
+.yarn-integrity
+
+# Eleventy
+_site/
+.cache/ 

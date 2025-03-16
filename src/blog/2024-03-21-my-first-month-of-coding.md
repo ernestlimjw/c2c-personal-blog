@@ -1,4 +1,8 @@
-# My First Month of Learning to Code: A Clinician's Perspective
+---
+layout: post.njk
+title: My First Month of Learning to Code - A Clinician's Perspective
+date: 2024-03-21
+---
 
 It's been one month since I decided to take the plunge into programming, and what a journey it's been! As someone who spent years in healthcare, the transition to thinking like a programmer has been both challenging and exciting.
 

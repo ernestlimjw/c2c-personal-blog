@@ -1,4 +1,8 @@
-# Why Clinicians Should Learn to Code
+---
+layout: post.njk
+title: Why Clinicians Should Learn to Code
+date: 2024-03-20
+---
 
 As a healthcare professional, I never imagined that learning to code would become such an integral part of my career journey. However, the intersection of healthcare and technology has opened up incredible opportunities for those willing to bridge these two worlds.
 

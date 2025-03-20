@@ -1,5 +1,5 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "_site",
-  "framework": "11ty"
+  "framework": "eleventy"
 } 
